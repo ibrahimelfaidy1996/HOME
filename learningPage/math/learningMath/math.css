@@ -1,0 +1,20 @@
+/* img{
+    height: 350px;
+    
+} */
+h4{
+    color: rebeccapurple;
+}
+/* video{
+    width: 100%;
+   
+} */
+body{
+    background-color: #FFEBD8;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    color: rebeccapurple;
+}

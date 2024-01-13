@@ -1,0 +1,26 @@
+.navbar-brand{
+    color: orangered !important;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover{
+    color: rgb(225, 63, 5) !important;
+}
+.nav-link:hover{
+    color: orangered !important;
+}
+
+
+.navBtnSearch{
+    background-color: orangered;
+    color: white;
+    border: 2px solid rgb(215, 9, 9) ;
+}
+
+.navBtnSearch:hover{
+    background-color: rgb(216, 61, 5);
+    border: 2px solid rgb(215, 9, 9) ;
+
+    color: white;
+}

@@ -1,0 +1,83 @@
+
+.memoryphotos img{
+    width: 100px;
+    height:100px;
+    opacity: 0;
+}
+
+main{
+  
+ 
+    border-radius: 10px;
+    background-color: #7E6BD3; 
+  overflow: hidden; 
+
+}
+.memoryphotos{
+  
+    width: 25%px;
+    height: 100px;
+    float: left;
+    cursor: pointer;
+    background-image: url("brain.jpg");
+    margin: 5px;
+}
+
+
+    
+
+body{
+
+  margin-bottom: 70px;
+  padding: 0;
+  background-color:#7E6BD3 !important;
+}
+.memoryfooter{
+  position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: #f8f9fa; 
+          text-align: center;
+          padding: 10px 0;
+  background-color: #1A2C38;
+}
+
+.description
+{
+  text-align: center;
+  background-color: #7E6BD3;
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+.back-btn{
+
+  background-color: #E7807C;
+}
+
+.back-btn {
+  padding: 10px 20px; 
+  font-size: 16px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .back-btn {
+      padding: 8px 16px; 
+      font-size: 14px; 
+  }}
+
+
+  @media screen and (max-width: 371px) {
+    .memoryfooter {
+        display: none;
+    }
+    .memoryphotos{
+      width: 20%;
+    }
+    .memoryphotos img{
+      width: 100%;
+    }
+}

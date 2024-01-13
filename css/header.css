@@ -1,0 +1,21 @@
+
+  .gifBackGround {
+   background-image: url("7.gif") !important;
+   background-size: cover;
+   /* width: 100%; */
+   height: 100vh;
+
+  }
+  .ml3
+  {
+    font-family: 'Lobster Two', cursive;
+   
+    text-align: center;
+    font-size: 3rem;
+    font-weight:bolder;
+      margin: auto;
+    
+ }
+  
+
+

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Gayathri', sans-serif;
+  background: rgba(133, 133, 133, 0.9);
+  color: white;
+  /* border: 10px solid rgb(156, 100, 100); */
+  /* margin: 0; */
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: black;
+
+  /* background-color:aquamarine ; */
+}
+
+.alphabet:hover {
+  color: rgb(174, 86, 86);
+  cursor: pointer;
+  background-color: white;
+}
+
+.container {
+  padding: 4rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+main .container {
+  padding-top: 1px;
+}
+
+.inside {
+  padding: 3rem 0;
+}
+
+.alphabet {
+  font-size: 4rem;
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+  color: white;
+  background-color: green;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.pressed {
+  font-weight: 700;
+  border: 3px solid white;
+}

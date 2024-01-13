@@ -1,0 +1,56 @@
+
+
+ .myItems {
+  
+   
+    position: relative;
+    
+
+    cursor: pointer;
+}
+
+.active{
+    display: flex;
+}
+
+.lightBoxContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.lightBoxItem {
+   
+    width: 50rem;
+    height:100%;
+    background-image: url(img1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   
+}
+
+
+
+.active{
+    display: flex;
+}
+
+
+.changeColor{
+    color: white;
+    
+}
+
+.changeColor:hover{
+    color: orangered;
+    cursor: pointer;
+}

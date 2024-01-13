@@ -1,0 +1,614 @@
+:root {
+  --size: 300px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 80vh;
+}
+
+/* container */
+.container0 {
+  margin-top: 50px;
+  perspective: 1000px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+  transition: all 0.85s cubic-bezier(1, -0.75, 0.5, 1.2);
+  /* turn the cube  */
+  /* transform: rotateX(90deg); */
+  /* transform: rotateY(90deg); */
+}
+
+/* Faces */
+.face {
+  position: absolute;
+  border: 1px solid rgb(250, 175, 187);
+  box-shadow: inset 0 0 60px rgb(250, 175, 187);
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  font-size: 1.25rem;
+  background-color:rgb(250, 175, 187);
+  opacity: 0.95;
+}
+
+.front {
+  transform: translateZ(150px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+/* Interactions */
+#bottom:checked ~ .container0 .cube {
+  transform: rotateX(90deg);
+}
+
+#top:checked ~ .container0 .cube {
+  transform: rotateX(-90deg);
+}
+
+#left:checked ~ .container0 .cube {
+  transform: rotateY(90deg);
+}
+
+#right:checked ~ .container0 .cube {
+  transform: rotateY(-90deg);
+}
+
+#back:checked ~ .container0 .cube {
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+/* .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  background-color: pink;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgb(241, 45, 78);
+} */
+
+
+
+.btn0 {
+  position: relative;
+  left: -55px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  background-color: pink;
+  cursor: pointer;
+  z-index: 1;
+  margin: 1rem;
+  transition: 0.5s;
+  text-align: center;
+  padding-top: 25px;
+  
+}
+
+/* Button Effect #1 */
+.btn0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  background-color: rgb(248, 110, 133);
+  border-radius: 0.25rem;
+  z-index: -1;
+}
+
+.btn0:hover {
+  color: white;
+}
+
+.btn0:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* ////////////////cube 2////////////////////////////////////////////////////////////////// */
+
+.container2 {
+  margin-top: 50px;
+  perspective: 1000px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.cube2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+  transition: all 0.85s cubic-bezier(1, -0.75, 0.5, 1.2);
+  /* turn the cube  */
+  /* transform: rotateX(90deg); */
+  /* transform: rotateY(90deg); */
+}
+
+/* Faces */
+.face2 {
+  position: absolute;
+  border: 1px solid rgb(161, 149, 240);
+  box-shadow: inset 0 0 60px rgb(165, 144, 244);
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  font-size: 1.25rem;
+  background-color:rgb(155, 155, 243);
+  opacity: 0.95;
+}
+
+.front2 {
+  transform: translateZ(150px);
+}
+
+.back2 {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.top2 {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.right2 {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.left2 {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.bottom2 {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+/* Interactions */
+#bottom2:checked ~ .container2 .cube2 {
+  transform: rotateX(90deg);
+}
+
+#top2:checked ~ .container2 .cube2 {
+  transform: rotateX(-90deg);
+}
+
+#left2:checked ~ .container2 .cube2 {
+  transform: rotateY(90deg);
+}
+
+#right2:checked ~ .container2 .cube2 {
+  transform: rotateY(-90deg);
+}
+
+#back2:checked ~ .container2 .cube2 {
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+/* .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  background-color: pink;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgb(241, 45, 78);
+} */
+
+
+
+.btn2 {
+  position: relative;
+  left: -55px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  background-color: rgb(161, 149, 240);
+  cursor: pointer;
+  z-index: 1;
+  margin: 1rem;
+  transition: 0.5s;
+  text-align: center;
+  padding-top: 25px;
+  
+}
+
+/* Button Effect #1 */
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  background-color:  rgb(47, 27, 174);
+  border-radius: 0.25rem;
+  z-index: -1;
+}
+
+.btn2:hover {
+  color: white;
+}
+
+.btn2:hover::before {
+  width: 100%;
+}
+
+
+
+
+/* ////////////////cube 3////////////////////////////////////////////////////////////////// */
+
+.container3 {
+  margin-top: 50px;
+  perspective: 1000px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.cube3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+  transition: all 0.85s cubic-bezier(1, -0.75, 0.5, 1.2);
+  /* turn the cube  */
+  /* transform: rotateX(90deg); */
+  /* transform: rotateY(90deg); */
+}
+
+/* Faces */
+.face3 {
+  position: absolute;
+  border: 1px solid mediumturquoise;
+  box-shadow: inset 0 0 60px mediumturquoise;
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  font-size: 1.25rem;
+  background-color:mediumturquoise;
+  opacity: 0.95;
+}
+
+.front3 {
+  transform: translateZ(150px);
+}
+
+.back3 {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.top3 {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.right3 {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.left3 {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.bottom3 {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+/* Interactions */
+#bottom3:checked ~ .container3 .cube3 {
+  transform: rotateX(90deg);
+}
+
+#top3:checked ~ .container3 .cube3 {
+  transform: rotateX(-90deg);
+}
+
+#left3:checked ~ .container3 .cube3 {
+  transform: rotateY(90deg);
+}
+
+#right3:checked ~ .container3 .cube3 {
+  transform: rotateY(-90deg);
+}
+
+#back3:checked ~ .container3 .cube3 {
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+/* .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  background-color: pink;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgb(241, 45, 78);
+} */
+
+
+
+.btn3 {
+  position: relative;
+  left: -55px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  background-color: mediumturquoise;
+  cursor: pointer;
+  z-index: 1;
+  margin: 1rem;
+  transition: 0.5s;
+  text-align: center;
+  padding-top: 25px;
+  
+}
+
+/* Button Effect #1 */
+.btn3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  background-color:  rgb(20, 103, 100);
+  border-radius: 0.25rem;
+  z-index: -1;
+}
+
+.btn3:hover {
+  color: white;
+}
+
+.btn3:hover::before {
+  width: 100%;
+}
+
+
+
+
+/* ////////////////cube 4////////////////////////////////////////////////////////////////// */
+
+.container4 {
+  margin-top: 50px;
+  perspective: 1000px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.cube4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+  transition: all 0.85s cubic-bezier(1, -0.75, 0.5, 1.2);
+  /* turn the cube  */
+  /* transform: rotateX(90deg); */
+  /* transform: rotateY(90deg); */
+}
+
+/* Faces */
+.face4 {
+  position: absolute;
+  border: 1px solid rgb(72, 153, 72);
+  box-shadow: inset 0 0 60px rgb(81, 156, 81);
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  font-size: 1.25rem;
+  background-color:rgb(77, 166, 77);
+  opacity: 0.95;
+}
+
+.front4 {
+  transform: translateZ(150px);
+}
+
+.back4 {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.top4 {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.right4 {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.left4 {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.bottom4 {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+/* Interactions */
+#bottom4:checked ~ .container4 .cube4 {
+  transform: rotateX(90deg);
+}
+
+#top4:checked ~ .container4 .cube4 {
+  transform: rotateX(-90deg);
+}
+
+#left4:checked ~ .container4 .cube4 {
+  transform: rotateY(90deg);
+}
+
+#right4:checked ~ .container4 .cube4 {
+  transform: rotateY(-90deg);
+}
+
+#back4:checked ~ .container4 .cube4 {
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+/* .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  background-color: pink;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgb(241, 45, 78);
+} */
+
+
+
+.btn4 {
+  position: relative;
+  left: -55px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  background-color: rgb(81, 182, 81);
+  cursor: pointer;
+  z-index: 1;
+  margin: 1rem;
+  transition: 0.5s;
+  text-align: center;
+  padding-top: 25px;
+  
+}
+
+/* Button Effect #1 */
+.btn4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  background-color:  rgb(6, 90, 6);
+  border-radius: 0.25rem;
+  z-index: -1;
+}
+
+.btn4:hover {
+  color: white;
+}
+
+.btn4:hover::before {
+  width: 100%;
+}

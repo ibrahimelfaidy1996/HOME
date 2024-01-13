@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Body</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/homestyle.css">
+    <link rel="stylesheet" href="../../../css/navStyle.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .nextbtndiv
+      {
+        display: flex;
+         position: absolute;
+         top: 0;
+        width: 100px;
+        
+     
+      }
+      #next
+      {
+        width: 100%;
+      
+        
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="../../../index.html">FunLearn</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item mx-2">
+              <a class="nav-link active " aria-current="page" href="../../../learningPage/english/learningEnglish.html">back</a>
+            </li>
+           
+  
+            
+  
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="btn-container nextbtndiv pt-4 btnHover">
+      <button class="btn" id="next">Next</button>
+    </div>
+    <div class="image-container">
+      <span style="--i: 1">
+        <img src="assets/images/8.png" />
+      </span>
+      <span style="--i: 2">
+        <img src="assets/images/2.png" />
+      </span>
+      <span style="--i: 3">
+        <img src="assets/images/3.png" />
+      </span>
+      <span style="--i: 4">
+        <img src="assets/images/4.png" />
+      </span>
+      <span style="--i: 5">
+        <img src="assets/images/5.png" />
+      </span>
+      <span style="--i: 6">
+        <img src="assets/images/6.png" />
+      </span>
+      <span style="--i: 7">
+        <img src="assets/images/7.png" />
+      </span>
+      <span style="--i: 8">
+        <img src="assets/images/1.png" />
+      </span>
+      <!-- sounds -->
+       <audio id="audio1" src="assets/sounds/1.mp3"></audio>
+        <audio id="audio2" src="assets/sounds/8.mp3"></audio>
+        <audio id="audio3" src="assets/sounds/2.mp3"></audio>
+        <audio id="audio4" src="assets/sounds/3.mp3"></audio>
+        <audio id="audio5" src="assets/sounds/4.mp3"></audio>
+        <audio id="audio6" src="assets/sounds/5.mp3"></audio>
+        <audio id="audio7" src="assets/sounds/6.mp3"></audio>
+        <audio id="audio8" src="assets/sounds/7.mp3"></audio>
+<!-- Add more audio elements for each image -->
+    </div>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
